@@ -1,0 +1,101 @@
+# C# Methods - Short Summary
+
+## What is a Method?
+
+A **method** is a block of code that performs a specific task. Instead of writing the same code multiple times, you can write it once inside a method and call it whenever needed. Methods make programs easier to read, reuse, and maintain.
+
+## Advantages of Methods
+
+* Reduces code duplication.
+* Makes the program easier to understand.
+* Improves code reusability.
+* Makes debugging and maintenance easier.
+
+## Syntax
+
+```csharp
+access_modifier static return_type MethodName(parameters)
+{
+    // Code
+    return value; // Only for non-void methods
+}
+```
+
+## Types of Methods
+
+### 1. Method without Parameters and without Return Value
+
+* Takes no input.
+* Returns no value (`void`).
+
+Example:
+
+```csharp
+static void Display()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+### 2. Method with Parameters and without Return Value
+
+* Takes input through parameters.
+* Returns no value.
+
+Example:
+
+```csharp
+static void Add(int a, int b)
+{
+    Console.WriteLine(a + b);
+}
+```
+
+### 3. Method without Parameters but with Return Value
+
+* Takes no input.
+* Returns a value.
+
+Example:
+
+```csharp
+static int GetNumber()
+{
+    return 100;
+}
+```
+
+### 4. Method with Parameters and Return Value
+
+* Takes input through parameters.
+* Returns a value.
+
+Example:
+
+```csharp
+static int Multiply(int a, int b)
+{
+    return a * b;
+}
+```
+
+## Calling a Method
+
+```csharp
+Display();
+Add(10, 20);
+
+int number = GetNumber();
+int result = Multiply(5, 6);
+```
+
+## Key Terms
+
+* **void** → The method does not return any value.
+* **return** → Sends a value back to the caller.
+* **Parameter** → A variable defined in the method.
+* **Argument** → The actual value passed when calling the method.
+
+## Conclusion
+
+Methods help organize code into small, reusable blocks. They improve readability, reduce repetition, and are one of the fundamental concepts in C# programming.

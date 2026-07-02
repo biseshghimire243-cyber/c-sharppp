@@ -1,0 +1,13 @@
+**Method Overloading in C#**
+
+* Method overloading is a feature of C# that allows multiple methods to have the **same name** but **different parameter lists**.
+* The methods can differ by:
+
+  * The **number of parameters**.
+  * The **data type of parameters**.
+  * The **order of parameters**.
+* It allows a single method name to perform similar tasks with different types of input.
+* Method overloading improves **code readability** because related operations use the same method name.
+* It increases **code reusability** by avoiding the need to create multiple methods with different names.
+* It provides **flexibility** by allowing methods to handle different input combinations.
+* Method overloading is an example of **compile-time (static) polymorphism** in object-oriented programming.

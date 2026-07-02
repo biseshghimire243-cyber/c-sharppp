@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>methodpractice2</StartupObject>
+    <StartupObject>overloading</StartupObject>
   </PropertyGroup>
 
 </Project>

@@ -1,0 +1,70 @@
+1. using System
+
+This line imports the System library, which provides built-in functions such as displaying output on the screen, taking input from the user, and converting data types.
+
+2. Rectangle Class
+
+A class named Rectangle is created. It acts as a blueprint for rectangle objects.
+
+Inside this class:
+
+Two variables are declared:
+Length – stores the length of the rectangle.
+Breadth – stores the breadth of the rectangle.
+
+These variables are declared as public so they can be accessed from another class.
+
+3. ComputeArea() Method
+
+This method calculates the area of the rectangle.
+
+It multiplies the length by the breadth and returns the result.
+
+Formula:
+Area = Length × Breadth
+
+4. ComputePerimeter() Method
+
+This method calculates the perimeter of the rectangle.
+
+It adds the length and breadth, multiplies the sum by 2, and returns the result.
+
+Formula:
+Perimeter = 2 × (Length + Breadth)
+
+5. Polygon Class
+
+Another class named Polygon is created.
+
+This class contains the Main() method, which is the starting point of the program.
+
+6. Creating an Object
+
+Inside the Main() method, an object of the Rectangle class is created.
+
+This object allows the program to access the variables and methods defined inside the Rectangle class.
+
+7. Taking User Input
+
+The program asks the user to enter:
+
+Length
+Breadth
+
+The entered values are stored in the object's Length and Breadth variables.
+
+8. Calculating the Area
+
+The program calls the ComputeArea() method.
+
+The method calculates the area using the entered values and returns the result.
+
+The program then displays the area on the screen.
+
+9. Calculating the Perimeter
+
+Next, the program calls the ComputePerimeter() method.
+
+The method calculates the perimeter and returns the result.
+
+The program displays the perimeter on the screen.

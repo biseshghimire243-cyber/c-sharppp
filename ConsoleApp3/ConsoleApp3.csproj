@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Default</StartupObject>
+    <StartupObject>Parameterized</StartupObject>
   </PropertyGroup>
 
 </Project>

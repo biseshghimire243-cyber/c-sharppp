@@ -1,0 +1,169 @@
+Class and Object in C# – Notes
+What is a Class?
+
+A class is a blueprint or template for creating objects. It defines the data (fields/properties) and behavior (methods) of an object.
+
+Definition:
+A class is a user-defined data type that contains variables (fields) and methods (functions).
+
+Syntax
+class Student
+{
+    public string Name;
+    public int Age;
+
+    public void Display()
+    {
+        Console.WriteLine(Name);
+        Console.WriteLine(Age);
+    }
+}
+What is an Object?
+
+An object is an instance of a class. It is created using the new keyword and occupies memory.
+
+Definition:
+An object is a real-world entity that contains its own data and can perform the operations defined in its class.
+
+Syntax
+Student s1 = new Student();
+Creating and Using an Object
+using System;
+
+class Student
+{
+    public string Name;
+    public int Age;
+
+    public void Display()
+    {
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Age: " + Age);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student s1 = new Student();
+
+        s1.Name = "Ram";
+        s1.Age = 20;
+
+        s1.Display();
+    }
+}
+Output
+Name: Ram
+Age: 20
+Example with Two Objects
+using System;
+
+class Student
+{
+    public string Name;
+    public int Age;
+
+    public void Display()
+    {
+        Console.WriteLine(Name + " " + Age);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student s1 = new Student();
+        Student s2 = new Student();
+
+        s1.Name = "Ram";
+        s1.Age = 20;
+
+        s2.Name = "Hari";
+        s2.Age = 22;
+
+        s1.Display();
+        s2.Display();
+    }
+}
+Characteristics of a Class
+It is a user-defined data type.
+It acts as a blueprint for objects.
+It contains fields, properties, methods, and constructors.
+Memory is not allocated for a class until an object is created.
+Characteristics of an Object
+It is an instance of a class.
+Memory is allocated when the object is created.
+It has its own state (data) and behavior (methods).
+Multiple objects can be created from one class.
+Difference Between Class and Object
+Class	Object
+Blueprint or template	Instance of a class
+Logical entity	Physical entity
+Does not occupy memory by itself	Occupies memory
+Used to create objects	Created from a class
+Declared using class keyword	Created using new keyword
+Advantages of Class and Object
+Supports Object-Oriented Programming (OOP).
+Makes code reusable.
+Improves code organization.
+Makes programs easier to maintain.
+Represents real-world entities.
+Real-Life Example
+
+Class: Car
+
+Fields:
+
+Brand
+Color
+Model
+
+Methods:
+
+Start()
+Stop()
+Drive()
+
+Objects:
+
+Toyota
+Honda
+Tesla
+
+All these cars are objects created from the Car class.
+
+Viva Questions
+1. What is a class?
+
+A class is a blueprint or template used to create objects. It contains data members and methods.
+
+2. What is an object?
+
+An object is an instance of a class that contains its own data and behavior.
+
+3. How do you create an object in C#?
+Student s = new Student();
+4. What keyword is used to create an object?
+
+The new keyword.
+
+5. Can we create multiple objects from one class?
+
+Yes. A single class can be used to create many objects.
+
+6. Does a class occupy memory?
+
+No. A class itself does not occupy memory. Memory is allocated only when an object is created.
+
+Key Points to Remember
+Class = Blueprint or template.
+Object = Instance of a class.
+Objects are created using the new keyword.
+A class contains fields, methods, properties, and constructors.
+One class can create multiple objects.
+Objects allow you to access the data and methods defined in the class.
+
+These notes are concise and well suited for B.Sc. CSIT practical exams and viva preparation.

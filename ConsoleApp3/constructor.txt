@@ -1,0 +1,130 @@
+Constructor in C# – Notes
+Definition
+
+A constructor is a special method in C# that is automatically called when an object of a class is created. It is used to initialize the object's data members.
+
+Characteristics of a Constructor
+Constructor name must be the same as the class name.
+It does not have any return type (not even void).
+It is called automatically when an object is created using the new keyword.
+A class can have more than one constructor (constructor overloading).
+Syntax
+class Student
+{
+    public Student()
+    {
+        // Constructor body
+    }
+}
+Types of Constructors
+1. Default Constructor
+Has no parameters.
+Initializes objects with default values.
+
+Example:
+
+class Student
+{
+    public Student()
+    {
+        Console.WriteLine("Default Constructor Called");
+    }
+}
+
+Object creation:
+
+Student s = new Student();
+2. Parameterized Constructor
+Accepts parameters.
+Initializes objects with user-provided values.
+
+Example:
+
+class Student
+{
+    public string Name;
+
+    public Student(string name)
+    {
+        Name = name;
+    }
+}
+
+Object creation:
+
+Student s = new Student("Bishesh");
+Constructor Overloading
+
+A class can have multiple constructors with different parameter lists.
+
+Example:
+
+class Student
+{
+    public Student()
+    {
+        Console.WriteLine("Default");
+    }
+
+    public Student(string name)
+    {
+        Console.WriteLine(name);
+    }
+}
+Advantages of Constructors
+Initializes objects automatically.
+Reduces repetitive code.
+Makes programs easier to understand.
+Improves code organization.
+Ensures every object starts with valid values.
+Difference Between Constructor and Method
+Constructor	Method
+Same name as class	Can have any name
+No return type	Has a return type (or void)
+Called automatically	Called manually
+Used to initialize objects	Used to perform operations
+Constructor in Bank Example
+class Bank
+{
+    public int AccountNumber;
+    public string AccountType;
+    public double Balance;
+
+    public Bank(int accountNumber, string accountType, double balance)
+    {
+        AccountNumber = accountNumber;
+        AccountType = accountType;
+        Balance = balance;
+    }
+}
+
+Creating objects:
+
+Bank b1 = new Bank(101, "Saving", 10000);
+Bank b2 = new Bank(102, "Current", 15000);
+Important Viva Questions
+
+1. What is a constructor?
+A constructor is a special method that initializes an object when it is created.
+
+2. Can a constructor return a value?
+No. Constructors do not have a return type.
+
+3. Can constructors be overloaded?
+Yes. A class can have multiple constructors with different parameter lists.
+
+4. When is a constructor called?
+It is called automatically when an object is created using the new keyword.
+
+5. Why do we use constructors?
+To initialize object data automatically and avoid writing initialization code repeatedly.
+
+Key Points to Remember
+Constructor name = Class name.
+No return type.
+Called automatically.
+Used for object initialization.
+Supports constructor overloading.
+Invoked with the new keyword.
+
+These notes are suitable for B.Sc. CSIT practical exams and viva preparation

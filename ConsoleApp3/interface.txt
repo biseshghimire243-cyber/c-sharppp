@@ -1,0 +1,81 @@
+#mehtod overloading in c# is a feature that allows a class to have multiple methods with the same name but different parameters. This means that you can define multiple versions of a method, each with a different number or type of parameters,
+and the appropriate version will be called based on the arguments passed to the method.
+#structuring method overloading in C# involves defining multiple methods with the same name but different parameter lists.
+Here’s an example to illustrate method overloading:
+
+#the sealed class 
+sealed class Calculator
+{
+	// Method to add two integers
+	public int Add(int a, int b)
+	{
+		return a + b;
+	}
+	// Overloaded method to add three integers
+	public int Add(int a, int b, int c)
+	{
+		return a + b + c;
+	}
+	// Overloaded method to add two doubles
+	public double Add(double a, double b)
+	{
+		return a + b;
+	}
+}
+#abstract class 
+abstract class Shape
+{
+	// Abstract method to calculate area
+	public abstract double CalculateArea();
+	// Abstract method to calculate perimeter
+	public abstract double CalculatePerimeter();
+}
+#abstract class Circle : Shape
+{
+	private double radius;
+	public Circle(double radius)
+	{
+		this.radius = radius;
+	}
+	// Implementing the abstract method to calculate area
+	public override double CalculateArea()
+	{
+		return Math.PI * radius * radius;
+	}
+	// Implementing the abstract method to calculate perimeter
+	public override double CalculatePerimeter()
+	{
+		return 2 * Math.PI * radius;
+	}
+}
+#interface
+convvention for interface naming in C# is to prefix the interface name with an uppercase "I". 
+This helps to distinguish interfaces from classes and other types in the code. For example, 
+an interface for a shape could be named "IShape", while a class implementing that interface could be named "Circle" or "Rectangle".
+interface IShape
+{
+	// Method to calculate area
+	double CalculateArea();
+	// Method to calculate perimeter
+	double CalculatePerimeter();
+}
+interface ICircle : IShape
+{
+	// Method to get the radius of the circle
+	double GetRadius();
+}
+purpose of using interfaces in C# is to define a contract that classes can implement.
+#interface code example 
+interface IShape
+{
+	double CalculateArea();
+	double CalculatePerimeter();
+}
+interface Iperson
+{
+	string GetName();
+	int GetAge();
+}
+#Deligate 
+c# deligattesn are similar to the pointers to the functions in c and c++
+deligate 

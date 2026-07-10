@@ -127,6 +127,19 @@ a c# exception is an object that represents an error or unexpected condition tha
 exception handling in C# is the process of responding to and managing exceptions that may occur during the execution of a program.
 exception handling in C# is typically done using try-catch blocks, which allow you to catch and handle exceptions in a structured way.
 c# exception handling syntax:
+try
+{
+	// Code that may throw an exception
+}
+catch (ExceptionType ex)
+{
+	// Code to handle the exception
+}
+finally
+{
+	// Code that will always execute, regardless of whether an exception occurred or not
+}
+
 
 
 

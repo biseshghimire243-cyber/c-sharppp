@@ -79,3 +79,58 @@ interface Iperson
 #Deligate 
 c# deligattesn are similar to the pointers to the functions in c and c++
 deligate 
+
+#events 
+an event in C# is a way for a class to provide notifications to other classes or objects when something of interest occurs. 
+Events are based on delegates, which are type-safe function pointers that can reference methods with a specific signature. 
+When an event is raised, all the methods subscribed to that event are invoked.
+
+#partial class
+class partial class in C# allows you to split the definition of a class, struct, or interface across multiple files.
+used by developers to organize code better, especially in large projects or when working with auto-generated code.
+if class is marked as partial, it can be defined in multiple files, and the compiler will combine them into a single class at compile time.
+
+
+syntax for defining a partial class: 
+pariatl class ClassName
+{
+	// Class members go here
+}
+
+
+#collection teypes 
+a collection type in C# is a data structure that can hold multiple elements, such as arrays, lists, dictionaries, and sets.
+collection types provide a way to store, manage, and manipulate groups of related objects in a convenient and efficient manner.
+collection types in C# can be broadly categorized into two main categories: generic and non-generic collections.
+namespace System.Collections.Generic provides a set of generic collection types, 
+such as List<T>, Dictionary<TKey, TValue>, and HashSet<T>, which allow you to work with strongly typed collections.
+
+
+#collection types in C# can be broadly categorized into two main categories:\
+generic and
+non-generic collections.
+
+#list 
+syntax for defining a list in C#:
+list<T> listName = new list<T>();
+list <string> names = new list<string>();
+
+
+#Array list 
+Array list is a non-generic collection type in C# that can hold a variable number of elements of any type.
+arraylist is part of the System.Collections namespace and provides a way to store and manipulate a 
+collection of objects without specifying their types at compile time.
+
+#exception handling 
+An ecxeption in C# is an event that occurs during the execution of a program that disrupts the normal flow of instructions.
+a c# exception is an object that represents an error or unexpected condition that occurs during the execution of a program.
+exception handling in C# is the process of responding to and managing exceptions that may occur during the execution of a program.
+exception handling in C# is typically done using try-catch blocks, which allow you to catch and handle exceptions in a structured way.
+c# exception handling syntax:
+
+
+
+
+
+
+

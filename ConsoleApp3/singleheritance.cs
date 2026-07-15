@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Animal
+class AnimalA
 {
     public void Eat()
     {
@@ -8,7 +8,7 @@ class Animal
     }
 }
 
-class Dog : Animal
+class DogA : AnimalA
 {
     public void Bark()
     {
@@ -20,7 +20,7 @@ class SingleInheritanceProgram
 {
     static void Main()
     {
-        Dog d = new Dog();
+        DogA d = new DogA();
 
         d.Eat();
         d.Bark();

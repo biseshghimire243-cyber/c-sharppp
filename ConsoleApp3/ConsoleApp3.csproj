@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>MathOperation</StartupObject>
+    <StartupObject>CustomAttributeProgram</StartupObject>
   </PropertyGroup>
 
 </Project>
